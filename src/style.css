@@ -1,13 +1,13 @@
 @import 'tailwindcss';
-/* Base Styles */
 
-/* :root {
-  --mobile-width: 375px;
-  --desktop-width: 1440px;
-} */
+body {
+  @apply w-full bg-gradient-to-b from-indigo-900 via-purple-800 to-pink-700 text-white min-h-screen overflow-x-hidden;
+  font-family: 'Poppins', sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .is-hidden {
@@ -16,7 +16,6 @@ html {
   pointer-events: none;
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 375px) {
   .container {
     width: 100%;
@@ -67,47 +66,16 @@ html {
     margin-top: 1rem;
   }
 
-  /* Asegurar que el menú móvil se vea correctamente */
-  /* .mobile-menu-button {
-    display: block;
-  } */
-
-  .desktop-menu {
-    display: none;
-  }
-
   #mobile-menu {
     width: 100%;
   }
 }
 
-/* Modificar las reglas de media queries para asegurar el comportamiento correcto del menú */
-
-/* Añadir esta regla para asegurar que el menú de hamburguesa se muestre hasta 1439px */
-@media (max-width: 1439px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  /* .mobile-menu-button {
-    display: block;
-  } */
-}
-
-/* Asegurar que a partir de 1440px se muestre el menú de escritorio y se oculte el botón de hamburguesa */
 @media (min-width: 1440px) {
   .container {
     max-width: var(--desktop-width);
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .desktop-menu {
-    display: flex;
-  }
-
-  .mobile-menu-button {
-    display: none;
   }
 
   .hero-content {
@@ -125,13 +93,6 @@ html {
   .testimonials-slider {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-/* Base Styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  overflow-x: hidden;
 }
 
 /* Animated Background */
@@ -296,6 +257,9 @@ body {
 
 /* Estilos para el modal de la galería */
 #gallery-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: opacity 0.3s ease;
 }
 
