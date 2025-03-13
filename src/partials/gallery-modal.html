@@ -1,0 +1,26 @@
+<div
+  id="gallery-modal"
+  class="fixed inset-0 bg-black/80 z-50 items-center justify-center hidden"
+>
+  <div class="relative max-w-4xl w-full mx-4">
+    <button
+      id="close-modal"
+      class="absolute -top-12 right-0 text-white text-3xl hover:text-pink-300 transition-colors duration-300"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+    <div
+      class="bg-gradient-to-r from-purple-900 to-indigo-900 p-2 rounded-lg shadow-2xl"
+    >
+      <img
+        id="modal-image"
+        src="/placeholder.svg"
+        alt="Imagen ampliada"
+        class="w-full h-auto rounded"
+      />
+    </div>
+    <div class="text-center mt-4">
+      <h3 id="modal-caption" class="text-white text-xl font-bold"></h3>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "level99",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "glob": "^11.0.1",
+    "postcss": "^8.5.3",
+    "postcss-sort-media-queries": "^5.2.0",
+    "vite": "^6.2.0"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.13",
+    "tailwindcss": "^4.0.13",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}
