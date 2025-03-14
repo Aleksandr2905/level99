@@ -67,7 +67,6 @@ html {
   }
 }
 
-/* Animated Background */
 .stars,
 .twinkling,
 .clouds {
@@ -122,7 +121,6 @@ html {
   }
 }
 
-/* Phone Mockup */
 .phone-mockup {
   position: relative;
   animation: float 6s ease-in-out infinite;
@@ -140,7 +138,6 @@ html {
   }
 }
 
-/* Play Button */
 .play-button {
   width: 80px;
   height: 80px;
@@ -159,7 +156,6 @@ html {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Feature Cards */
 .feature-card {
   background: rgba(90, 24, 154, 0.3);
   border-radius: 1rem;
@@ -187,7 +183,6 @@ html {
   font-size: 1.5rem;
 }
 
-/* Gallery Grid */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -216,7 +211,6 @@ html {
   transform: scale(1.1);
 }
 
-/* Estilos para las imágenes de la galería */
 .gallery-image {
   cursor: pointer;
   transition: all 0.3s ease;
@@ -227,7 +221,6 @@ html {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Estilos para el modal de la galería */
 #gallery-modal {
   display: flex;
   align-items: center;
@@ -253,7 +246,6 @@ html {
   transform: rotate(90deg);
 }
 
-/* Testimonials */
 .testimonials-slider {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -275,7 +267,6 @@ html {
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Download Buttons */
 .download-button {
   display: flex;
   align-items: center;
@@ -301,7 +292,6 @@ html {
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* FAQ Section */
 .faq-item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -337,29 +327,14 @@ html {
   transform: rotate(180deg);
 }
 
-/* Mobile Menu */
-/* #mobile-menu {
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
-} */
-
-/* Cookie Banner */
 #cookie-banner.active {
   transform: translateY(-100%);
 }
 
-/* Asegurar que las imágenes sean responsivas */
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* Mejorar la navegación en móvil */
-/* #mobile-menu.active {
-  transform: translateX(0);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-} */
 
 @media (min-width: 1440px) {
   .container {
