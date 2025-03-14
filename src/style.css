@@ -35,10 +35,6 @@ html {
     grid-template-columns: 1fr;
   }
 
-  .phone-mockup img {
-    max-width: 380px;
-  }
-
   .testimonial-card {
     padding: 1.5rem;
   }
@@ -119,11 +115,6 @@ html {
   to {
     background-position: 10000px 0;
   }
-}
-
-.phone-mockup {
-  position: relative;
-  animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
