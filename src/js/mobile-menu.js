@@ -1,4 +1,4 @@
-(() => {
+document.addEventListener('DOMContentLoaded', () => {
   const refs = {
     openModalBtn: document.querySelectorAll('[data-mobile-open]'),
     closeModalBtn: document.querySelector('[data-mobile-close]'),
@@ -16,11 +16,11 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+
     if (refs.modal.classList.contains('is-hidden')) {
-      document.body.style.overflow = 'auto';
-      document.body.style.overflowX = 'hidden';
+      document.documentElement.style.overflow = 'auto';
     } else {
-      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
     }
   }
 
@@ -29,4 +29,4 @@
       toggleModal();
     }
   });
-})();
+});
