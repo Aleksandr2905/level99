@@ -12,13 +12,12 @@
     </div>
     <div class="flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 mb-10 md:mb-0">
-        <div class="relative">
-          <img
-            src="./img/about/about.webp"
-            alt="Gameplay"
-            class="rounded-lg shadow-xl"
-          />
-        </div>
+        <img
+          src="./img/about/about.webp"
+          alt="Gameplay"
+          class="rounded-lg shadow-xl"
+          loading="lazy"
+        />
       </div>
       <div class="md:w-1/2 md:pl-12">
         <h3 class="text-2xl md:text-3xl font-bold mb-6 text-purple-200">
@@ -42,20 +41,28 @@
           Colecciona fragmentos de sueños para desbloquear nuevas áreas y
           habilidades.
         </p>
-        <div class="flex flex-wrap gap-4">
-          <div class="bg-purple-900 bg-opacity-50 px-4 py-2 rounded-full">
-            <span class="text-purple-300 font-medium">Aventuras</span>
-          </div>
-          <div class="bg-indigo-900 bg-opacity-50 px-4 py-2 rounded-full">
-            <span class="text-indigo-300 font-medium">Rompecabezas</span>
-          </div>
-          <div class="bg-blue-900 bg-opacity-50 px-4 py-2 rounded-full">
-            <span class="text-blue-300 font-medium">Mundo fantástico</span>
-          </div>
-          <div class="bg-pink-900 bg-opacity-50 px-4 py-2 rounded-full">
-            <span class="text-pink-300 font-medium">Para todas las edades</span>
-          </div>
-        </div>
+        <ul class="flex flex-wrap gap-3">
+          <li
+            class="bg-purple-900 bg-opacity-50 px-3 py-2 rounded-full text-purple-300 font-medium"
+          >
+            Aventuras
+          </li>
+          <li
+            class="bg-indigo-900 bg-opacity-50 px-3 py-2 rounded-full text-indigo-300 font-medium"
+          >
+            Rompecabezas
+          </li>
+          <li
+            class="bg-blue-900 bg-opacity-50 px-3 py-2 rounded-full text-blue-300 font-medium"
+          >
+            Mundo fantástico
+          </li>
+          <li
+            class="bg-pink-900 bg-opacity-50 px-3 py-2 rounded-full text-pink-300 font-medium"
+          >
+            Para todas las edades
+          </li>
+        </ul>
       </div>
     </div>
   </div>
